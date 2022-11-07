@@ -181,8 +181,8 @@ border-radius: 10px;
 box-shadow: greenyellow 3px 3px 30px;
 }
 .aside--video{
-    width: 28vw;
-    height: 100%;
+    width: 60vw;
+    height: auto;
     box-shadow: greenyellow 3px 3px 30px;
     border: solid 3px greenyellow;
     border-radius: 10px;    
@@ -375,6 +375,10 @@ box-shadow: greenyellow 3px 3px 30px;
     #aside{
         grid-area: aside;
         width: 30vw;
+    }
+    .aside--video{
+        width: 28vw;
+        height: auto;
     }
 
     /*Inicia footer desktop*/
