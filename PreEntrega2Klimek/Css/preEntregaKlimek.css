@@ -89,7 +89,7 @@ li{
 #main{
     border: solid 3px black;
     border-radius: 10px;
-    background-image:url(./IMAGENES/FONDO\ INICIO.jpg) ;
+    background-image:url(../IMAGENES/FONDO\ INICIO.jpg) ;
     background-size: cover;
 }
 .main__section__div{
@@ -142,7 +142,7 @@ figcaption{
 #main__contactanos{
     border: solid 3px black;
     border-radius: 10px;
-    background-image:url(./IMAGENES/FONDO\ INICIO.jpg) ;
+    background-image:url(../IMAGENES/FONDO\ INICIO.jpg) ;
     background-size:cover;
     height: 100%;
 }
@@ -169,7 +169,7 @@ figcaption{
     border: solid 3px black;
     border-radius: 10px;
     background-color: black;
-    background-image: url(./IMAGENES/FONDO\ ASIDE.jpg);
+    background-image: url(../IMAGENES/FONDO\ ASIDE.jpg);
     background-size:contain;
 }
 .aside--img{
