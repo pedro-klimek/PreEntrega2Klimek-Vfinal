@@ -1,0 +1,57 @@
+/*--------------PRE ENTREGA 3------------*/
+/*----------------Contactanos----------------*/
+@use "variables";
+
+body{
+    header{
+        img{
+            width: 12%;
+            height: auto;
+        }
+    }
+
+    #main__contactanos{
+        border: solid 3px black;
+        border-radius: 10px;
+        background-image:url(../IMAGENES/FONDO\ INICIO.jpg) ;
+        background-size:cover;
+        height: 100vh;
+        width: 100vw;
+        div{
+            div{
+                div{
+                    input{
+                        border: solid 4px greenyellow;
+                        border-radius: 30px;
+                        box-shadow: greenyellow 3px 3px 30px;
+                    }
+                    textarea{
+                        border: solid 4px greenyellow;
+                        border-radius: 30px;
+                        box-shadow: greenyellow 3px 3px 30px;
+                    }
+                }
+                div{
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        padding-top: 20px;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+/*--------------Vista Desktop---------------*/
+@media(min-width:768px){
+    body{
+        header{
+            img{
+                min-width: 13%;
+                height: auto;
+                padding-left: 50px;
+            }
+        }
+    }
+}

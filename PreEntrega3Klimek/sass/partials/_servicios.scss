@@ -1,0 +1,46 @@
+/*--------------PRE ENTREGA 3------------*/
+/*---------------Servicios---------------*/
+@use "variables";
+
+#main{
+    section{
+        div{
+            div{
+                display: flex;
+                flex-direction: column;
+                max-height: 70vh;
+                figure{
+                    img{
+                        width: 40vw;
+                        border: solid 4px greenyellow;
+                        border-radius: 30px;
+                        box-shadow: greenyellow 3px 3px 30px;
+                    }
+                    figcaption{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*---------------Vista Desktop---------------*/
+
+@media(min-width:768pc){
+    #main{
+        section{
+            height: 100%;
+            div{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

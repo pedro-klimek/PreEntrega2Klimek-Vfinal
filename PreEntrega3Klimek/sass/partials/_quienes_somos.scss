@@ -1,0 +1,54 @@
+/*--------------PRE ENTREGA 3------------*/
+/*-------------Quienes somos-------------*/
+
+@use "variables";
+
+#main{
+    section{
+        div{
+            a{
+                border: solid variables.$recuadros_sombra 3px;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                box-shadow: variables.$recuadros_sombra 3px 3px 30px;
+            }
+        }
+    }
+
+}
+
+/*--------------Vista Desktop---------------*/
+@media(min-width:768px){
+    #main{
+        section{
+            div{
+                a{
+                    animation-name: animacion_1;
+                    animation-duration: 4s;
+                    animation-delay: 0s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    animation-direction:normal;
+                }
+            }
+        }
+    }
+    @keyframes animacion_1 {
+        20%{
+            scale: 0.3;
+        }
+        40%{
+            scale: 0.4;
+        }
+        60%{
+           scale: 0.5;
+        }
+        80%{
+            scale: 0.6;
+        }
+        100%{
+            scale: 0.7;
+        }
+    }
+}
