@@ -27,7 +27,8 @@
   padding-top: 10px;
 }
 #header img {
-  width: 12%;
+  min-width: 10%;
+  max-width: 12%;
   height: auto;
 }
 
@@ -170,13 +171,13 @@
   text-align: center;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
 }
 #footer div img {
   max-width: 20vw;
   height: auto;
   border: solid 3px black;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /*-------------VISTA DESKTOP----------*/
@@ -196,7 +197,8 @@
     width: 100%;
   }
   #header img {
-    min-width: 0.5%;
+    min-width: 6%;
+    max-width: 7%;
     height: auto;
     padding-left: 40px;
   }
@@ -283,7 +285,7 @@ body #main__contactanos {
   border-radius: 10px;
   background-image: url(../IMAGENES/FONDO\ INICIO.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 body #main__contactanos div div div input {
@@ -305,7 +307,7 @@ body #main__contactanos div div div img {
 /*--------------Vista Desktop---------------*/
 @media (min-width: 768px) {
   body header img {
-    min-width: 13%;
+    width: 100%;
     height: auto;
     padding-left: 50px;
   }

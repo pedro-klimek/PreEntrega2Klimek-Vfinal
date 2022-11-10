@@ -32,7 +32,8 @@
     padding-top: 10px;
 
     img{
-        width: 12%;
+        min-width: 10%;
+        max-width: 12%;
         height: auto;
     }
 }
@@ -189,7 +190,7 @@
             text-align: center;
             color: black;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 28px;
         }
     }
     div{
@@ -197,7 +198,7 @@
             max-width: 20vw;
             height: auto;
             border: solid 3px black;
-            border-radius: 10px;
+            border-radius: 20px;
         }
     }
 
@@ -228,7 +229,8 @@
         width: 100%;
         
         img{
-            min-width: 0.5%;
+            min-width: 6%;
+            max-width: 7%;
             height:auto;
             padding-left: 40px;
         }

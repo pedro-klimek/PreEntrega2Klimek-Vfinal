@@ -15,7 +15,7 @@ body{
         border-radius: 10px;
         background-image:url(../IMAGENES/FONDO\ INICIO.jpg) ;
         background-size:cover;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         div{
             div{
@@ -48,7 +48,7 @@ body{
     body{
         header{
             img{
-                min-width: 13%;
+                width:100%;
                 height: auto;
                 padding-left: 50px;
             }
