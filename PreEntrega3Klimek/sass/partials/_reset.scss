@@ -1,6 +1,13 @@
-/*--------------PRE ENTREGA 3------------*/
+/*---------------PRE ENTREGA 3--------------*/
 /*-----------------Reset Css----------------*/
-*{
-    margin: 0;
-    padding: 0;
-}
+
+/*----------Se crea variable reset----------*/
+ @mixin reset ($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+ }
+
+ /*----Se aplica variable para reset css----*/
+ *{
+    @include reset(0, 0 );
+ }

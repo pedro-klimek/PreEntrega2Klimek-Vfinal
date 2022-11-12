@@ -9,7 +9,7 @@
             a{
                 border: solid variables.$recuadros_sombra 3px;
                 background-color: black;
-                color: white;
+                color: variables.$font_ppal;
                 border-radius: 10px;
                 box-shadow: variables.$recuadros_sombra 3px 3px 30px;
             }

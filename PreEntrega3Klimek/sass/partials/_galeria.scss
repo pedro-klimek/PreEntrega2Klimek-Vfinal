@@ -12,9 +12,7 @@
                 figure{
                     padding-bottom: 20px;
                     img{
-                        border: solid 4px greenyellow;
-                        border-radius: 30px;
-                        box-shadow: 3px 3px 30px;
+                        @extend %recuadros;
                         width: 70vw;
                         height: auto;
                     }
@@ -22,4 +20,11 @@
             }
         }
     }
+}
+
+/*---------Se crea el @extend recuadros-----*/
+%recuadros{
+    border: solid 4px variables.$recuadros_sombra;
+    border-radius: 30px;
+    box-shadow: variables.$recuadros_sombra 3px 3px 30px;
 }

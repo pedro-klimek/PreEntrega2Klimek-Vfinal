@@ -12,9 +12,7 @@
                 figure{
                     img{
                         width: 40vw;
-                        border: solid 4px greenyellow;
-                        border-radius: 30px;
-                        box-shadow: greenyellow 3px 3px 30px;
+                        @extend %recuadros
                     }
                     figcaption{
                         font-size: 30px;
@@ -24,6 +22,20 @@
         }
     }
 }
+/*--------------Se Aplica Un @each-----------*/
+@each $color in greenyellow orange yellow {
+    .fig#{$color}{
+        color: $color;
+    }
+}
+
+/*---------Se crea el @extend recuadros-----*/
+%recuadros{
+    border: solid 4px variables.$recuadros_sombra;
+    border-radius: 30px;
+    box-shadow: variables.$recuadros_sombra 3px 3px 30px;
+}
+
 
 /*---------------Vista Desktop---------------*/
 

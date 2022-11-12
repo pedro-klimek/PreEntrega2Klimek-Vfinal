@@ -1,11 +1,16 @@
 /*--------------PRE ENTREGA 3------------*/
 /*-----------Variables utilizadas--------*/ /*--------------PRE ENTREGA 3------------*/
 /*-----------------Global----------------*/
-/*-------------VISTA DESKTOP-------------*/
+/*-------------VISTA MOBILE-----------*/
 #body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr 1fr auto;
+}
+
+/*--------Se crea variable "medidas"--------*/
+/*---Se aplica variable "medidas" en body--*/
+#body {
   width: 100vw;
   height: 100vh;
 }
@@ -288,20 +293,17 @@ body #main__contactanos {
   height: 100%;
   width: 100vw;
 }
-body #main__contactanos div div div input {
-  border: solid 4px greenyellow;
-  border-radius: 30px;
-  box-shadow: greenyellow 3px 3px 30px;
-}
-body #main__contactanos div div div textarea {
-  border: solid 4px greenyellow;
-  border-radius: 30px;
-  box-shadow: greenyellow 3px 3px 30px;
-}
 body #main__contactanos div div div img {
   height: 100px;
   width: 100px;
   padding-top: 20px;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+body #main__contactanos div div div input, body #main__contactanos div div div textarea {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
 }
 
 /*--------------Vista Desktop---------------*/
@@ -323,11 +325,15 @@ body #main__contactanos div div div img {
   padding-bottom: 20px;
 }
 #main section div div figure img {
-  border: solid 4px greenyellow;
-  border-radius: 30px;
-  box-shadow: 3px 3px 30px;
   width: 70vw;
   height: auto;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+#main section div div figure img {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
 }
 
 /*--------------PRE ENTREGA 3------------*/
@@ -377,12 +383,29 @@ body #main__contactanos div div div img {
 }
 #main section div div figure img {
   width: 40vw;
-  border: solid 4px greenyellow;
-  border-radius: 30px;
-  box-shadow: greenyellow 3px 3px 30px;
 }
 #main section div div figure figcaption {
   font-size: 30px;
+}
+
+/*--------------Se Aplica Un @each-----------*/
+.figgreenyellow {
+  color: greenyellow;
+}
+
+.figorange {
+  color: orange;
+}
+
+.figyellow {
+  color: yellow;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+#main section div div figure img {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
 }
 
 /*---------------Vista Desktop---------------*/
@@ -399,8 +422,10 @@ body #main__contactanos div div div img {
     padding-bottom: 10px;
   }
 }
-/*--------------PRE ENTREGA 3------------*/
+/*---------------PRE ENTREGA 3--------------*/
 /*-----------------Reset Css----------------*/
+/*----------Se crea variable reset----------*/
+/*----Se aplica variable para reset css----*/
 * {
   margin: 0;
   padding: 0;
