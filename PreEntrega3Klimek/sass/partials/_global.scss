@@ -13,13 +13,13 @@
 
 }
 
-/*--------Se crea variable "medidas"--------*/
+/*--------Se crea funcion "medidas"--------*/
 @mixin medidas ($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
 
-/*---Se aplica variable "medidas" en body--*/
+/*---Se aplica funcion "medidas" en body--*/
 #body{
     @include medidas(100vw, 100vh);
 }
