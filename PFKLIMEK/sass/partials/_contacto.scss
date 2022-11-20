@@ -1,0 +1,61 @@
+
+/*----------------Contactanos----------------*/
+@use "variables";
+
+body{
+    header{
+        img{
+            width: 12%;
+            height: auto;
+        }
+    }
+
+    #main__contactanos{
+        border: solid 3px black;
+        border-radius: 10px;
+        background-image:url(../IMAGENES/FONDO\ INICIO.jpg) ;
+        background-size:cover;
+        height: 100%;
+        width: 100vw;
+        div{
+            div{
+                div{
+                    input{
+                        @extend %recuadros
+                        
+                    }
+                    textarea{
+                        @extend %recuadros
+                    }
+                }
+                div{
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        padding-top: 20px;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+/*---------Se crea el @extend recuadros-----*/
+%recuadros{
+    border: solid 4px variables.$recuadros_sombra;
+    border-radius: 30px;
+    box-shadow: variables.$recuadros_sombra 3px 3px 30px;
+}
+
+/*--------------Vista Desktop---------------*/
+@media(min-width:768px){
+    body{
+        header{
+            img{
+                width:100%;
+                height: auto;
+                padding-left: 50px;
+            }
+        }
+    }
+}

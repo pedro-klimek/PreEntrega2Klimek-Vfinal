@@ -1,0 +1,432 @@
+/*-----------Variables utilizadas--------*/
+/*-----------------Global----------------*/
+/*-------------VISTA MOBILE-----------*/
+#body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr 1fr auto;
+}
+
+/*--------Se crea funcion "medidas"--------*/
+/*---Se aplica funcion "medidas" en body--*/
+#body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*-----------------------------------*/
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-height: 70vh;
+  min-height: 25vh;
+  background-color: black;
+  color: white;
+  border: solid 3px black;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#header img {
+  min-width: 10%;
+  max-width: 12%;
+  height: auto;
+}
+
+/*-----------------------------------*/
+#nav {
+  border: solid 6px black;
+  border-radius: 10px;
+}
+#nav nav .container-fluid {
+  background-color: grey;
+  width: 100vw;
+}
+#nav nav div a img {
+  max-width: 35vw;
+  height: auto;
+  border: solid 3px greenyellow;
+  box-shadow: solid 3px 3px 30px greenyellow;
+}
+#nav nav div button {
+  border: solid 3px greenyellow;
+  box-shadow: 3px 3px 30px greenyellow;
+  background-color: black;
+}
+#nav nav div button span {
+  background-color: greenyellow;
+}
+#nav nav div div ul {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+#nav nav div div ul li {
+  padding-bottom: 10px;
+}
+#nav nav div div ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  border: solid 3px black;
+  border-radius: 10px 20px;
+  background-color: rebeccapurple;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#nav nav div div ul li a:hover {
+  color: greenyellow;
+}
+
+/*----------------------------------------*/
+#main {
+  border: solid 3px black;
+  border-radius: 10px;
+  background-image: url(../IMAGENES/FONDO\ INICIO.jpg);
+  background-size: cover;
+}
+#main section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-items: start;
+  width: 100vw;
+  height: 500px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  overflow: auto;
+}
+#main section div h1 {
+  padding: 20px;
+}
+#main section div p {
+  padding: 20px;
+}
+
+/*----------------------------------------*/
+#aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px black;
+  border-radius: 10px;
+  background-color: black;
+  background-image: url(../IMAGENES/FONDO\ ASIDE.jpg);
+  background-size: contain;
+}
+#aside div img {
+  max-width: 100vw;
+  max-height: 10vh;
+  height: auto;
+  border: solid 3px greenyellow;
+  border-radius: 10px;
+  box-shadow: greenyellow 3px 3px 30px;
+  -webkit-animation: rotate-hor-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+  animation: rotate-hor-center 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@-webkit-keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+#aside div iframe {
+  width: 60vw;
+  height: auto;
+  box-shadow: greenyellow 3px 3px 30px;
+  border: solid 3px greenyellow;
+  border-radius: 10px;
+}
+
+/*-----------------------------------*/
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: grey;
+  border: solid 3px black;
+  border-radius: 10px;
+}
+#footer div p {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+}
+#footer div img {
+  max-width: 20vw;
+  height: auto;
+  border: solid 3px black;
+  border-radius: 20px;
+}
+
+/*-------------VISTA DESKTOP----------*/
+@media (min-width: 768px) {
+  #body {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  /*---------------------------------*/
+  #header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+  }
+  #header img {
+    width: 10%;
+    height: auto;
+    padding-left: 40px;
+  }
+  #header p {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  /*----------------------------------*/
+  #nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+  }
+  #nav div {
+    padding-left: 20px;
+  }
+  #nav div ul li {
+    display: inline-block;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  #nav div ul li a {
+    font-size: 40px;
+    border-radius: 10px 20px;
+  }
+  /*-----------------------------------*/
+  #main {
+    grid-area: main;
+    width: 70vw;
+    height: 100vh;
+  }
+  #main section div {
+    width: 70vw;
+    height: 100%;
+    font-size: 30px;
+  }
+  #main section div h1 {
+    padding: 20px;
+  }
+  #main section div p {
+    padding: 20px;
+  }
+  /*------------------------------------*/
+  #aside {
+    grid-area: aside;
+    width: 30vw;
+  }
+  #aside div iframe {
+    width: 28vw;
+    height: auto;
+  }
+  /*-----------------------------------*/
+  #footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+  }
+  #footer div {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 40px;
+  }
+  #footer div {
+    width: 100%;
+    height: auto;
+  }
+  #footer div img {
+    max-width: 26%;
+    height: auto;
+  }
+}
+/*----------------Contactanos----------------*/
+body header img {
+  width: 12%;
+  height: auto;
+}
+body #main__contactanos {
+  border: solid 3px black;
+  border-radius: 10px;
+  background-image: url(../IMAGENES/FONDO\ INICIO.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+}
+body #main__contactanos div div div img {
+  height: 100px;
+  width: 100px;
+  padding-top: 20px;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+body #main__contactanos div div div input, body #main__contactanos div div div textarea {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
+}
+
+/*--------------Vista Desktop---------------*/
+@media (min-width: 768px) {
+  body header img {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+  }
+}
+/*----------------Galeria----------------*/
+#main section div div {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+}
+#main section div div figure {
+  padding-bottom: 20px;
+}
+#main section div div figure img {
+  width: 70vw;
+  height: auto;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+#main section div div figure img {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
+}
+
+/*-------------Quienes somos-------------*/
+#main section div a {
+  border: solid greenyellow 3px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  box-shadow: greenyellow 3px 3px 30px;
+}
+
+/*--------------Vista Desktop---------------*/
+@media (min-width: 768px) {
+  #main section div a {
+    animation-name: animacion_1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  @keyframes animacion_1 {
+    20% {
+      scale: 0.3;
+    }
+    40% {
+      scale: 0.4;
+    }
+    60% {
+      scale: 0.5;
+    }
+    80% {
+      scale: 0.6;
+    }
+    100% {
+      scale: 0.7;
+    }
+  }
+}
+/*---------------Servicios---------------*/
+#main section div div {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+}
+#main section div div figure img {
+  width: 40vw;
+}
+#main section div div figure figcaption {
+  font-size: 30px;
+}
+
+/*--------------Se Aplica Un @each-----------*/
+.figgreenyellow {
+  color: greenyellow;
+}
+
+.figorange {
+  color: orange;
+}
+
+.figyellow {
+  color: yellow;
+}
+
+/*---------Se crea el @extend recuadros-----*/
+#main section div div figure img {
+  border: solid 4px greenyellow;
+  border-radius: 30px;
+  box-shadow: greenyellow 3px 3px 30px;
+}
+
+/*---------------Vista Desktop---------------*/
+@media (min-width: 768pc) {
+  #main section {
+    height: 100%;
+  }
+  #main section div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+/*-----------------Reset Css----------------*/
+/*----------Se crea funcion reset----------*/
+/*----Se aplica funcion para reset css----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------main----------------*/
+
+/*# sourceMappingURL=estilo.css.map */

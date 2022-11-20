@@ -1,0 +1,13 @@
+
+/*-----------------Reset Css----------------*/
+
+/*----------Se crea funcion reset----------*/
+ @mixin reset ($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+ }
+
+ /*----Se aplica funcion para reset css----*/
+ *{
+    @include reset(0, 0 );
+ }

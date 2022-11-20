@@ -1,0 +1,58 @@
+
+/*---------------Servicios---------------*/
+@use "variables";
+
+#main{
+    section{
+        div{
+            div{
+                display: flex;
+                flex-direction: column;
+                max-height: 70vh;
+                figure{
+                    img{
+                        width: 40vw;
+                        @extend %recuadros
+                    }
+                    figcaption{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*--------------Se Aplica Un @each-----------*/
+@each $color in greenyellow orange yellow {
+    .fig#{$color}{
+        color: $color;
+    }
+}
+
+/*---------Se crea el @extend recuadros-----*/
+%recuadros{
+    border: solid 4px variables.$recuadros_sombra;
+    border-radius: 30px;
+    box-shadow: variables.$recuadros_sombra 3px 3px 30px;
+}
+
+
+/*---------------Vista Desktop---------------*/
+
+@media(min-width:768pc){
+    #main{
+        section{
+            height: 100%;
+            div{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
